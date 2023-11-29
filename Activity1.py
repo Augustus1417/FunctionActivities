@@ -7,6 +7,9 @@ def factorial():
     again = input("Again? y/n: ")
     if again.lower()== "y": factorial()
     elif again.lower()== "n":main()
+    else: 
+        print("Error input, try again")
+        main()
 
 def average():
     number = int(input("\nEnter a number: "))
@@ -18,6 +21,9 @@ def average():
     again = input("Again? y/n: ")
     if again.lower()== "y": average()
     elif again.lower()== "n": main()
+    else: 
+        print("Error input, try again")
+        main()
 
 def main():
     print("\n[1] Factorial of a number\n[2] Average of numbers\n[3] to exit")
